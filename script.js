@@ -86,6 +86,34 @@ window.addEventListener("scroll", () => {
   });
 });
 
+// Lightbox para obras de arte
+const lightbox = document.querySelector(".lightbox");
+const lightboxImg = document.querySelector(".lightbox-content img, video");
+const lightboxClose = document.querySelector(".lightbox-close");
+const artItems = document.querySelectorAll(".art-item");
+
+artItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const imgSrc = item.querySelector("img").src;
+
+    lightboxImg.src = imgSrc;
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+lightboxClose.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+  document.body.style.overflow = "auto";
+});
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+    document.body.style.overflow = "auto";
+  }
+});
+
 // Animación de tecleo para el título
 const heroTitle = document.querySelector(".hero h1");
 const originalText = heroTitle.textContent;
