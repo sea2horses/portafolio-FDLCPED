@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartel comparativo: Barroco vs. Hip‑Hop</title>
+    <style>
+      /* Tamaño aproximado A4 en px a 96dpi */
+      :root {
+        --baroque: #8a6d3b; /* dorado viejo */
+        --hiphop: #111827; /* gris carbón */
+        --accent: #10b981; /* acento hip-hop */
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+          sans-serif;
+        color: #1f2937;
+      }
+      .page {
+        width: 794px;
+        min-height: 1123px;
+        margin: 16px auto;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 28px;
+        background: linear-gradient(
+          90deg,
+          var(--baroque) 0%,
+          #b38b59 50%,
+          var(--hiphop) 100%
+        );
+        color: white;
+      }
+      .header h1 {
+        font-size: 28px;
+        margin: 0;
+        letter-spacing: 0.4px;
+      }
+      .sub {
+        font-size: 12px;
+        opacity: 0.9;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border-top: 1px solid #eee;
+      }
+      .col {
+        padding: 24px 28px;
+      }
+      .left {
+        background: linear-gradient(180deg, #fff 0%, #fffaf0 100%);
+      }
+      .right {
+        background: linear-gradient(180deg, #fff 0%, #f0fff7 100%);
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 12px;
+      }
+      .title span {
+        font-size: 22px;
+        font-weight: 800;
+      }
+      .pill {
+        font-size: 11px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        font-weight: 700;
+      }
+      .pill.left {
+        background: rgba(138, 109, 59, 0.12);
+        color: var(--baroque);
+        border: 1px solid rgba(138, 109, 59, 0.3);
+      }
+      .pill.right {
+        background: rgba(16, 185, 129, 0.12);
+        color: var(--accent);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+      }
+      .image {
+        height: 350px;
+        border: 2px dashed #d1d5db;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6b7280;
+        font-size: 13px;
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+      .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      h3 {
+        font-size: 14px;
+        margin: 14px 0 6px;
+        color: #374151;
+      }
+      ul {
+        margin: 0;
+        padding-left: 16px;
+      }
+      li {
+        margin: 4px 0;
+        font-size: 13px;
+      }
+      .keywords {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+      }
+      .kw {
+        font-size: 11px;
+        font-weight: 800;
+        padding: 6px 10px;
+        border-radius: 999px;
+      }
+      .kw.left {
+        background: rgba(138, 109, 59, 0.12);
+        color: var(--baroque);
+      }
+      .kw.right {
+        background: rgba(16, 185, 129, 0.12);
+        color: var(--accent);
+      }
+      .iconRow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .footer {
+        padding: 18px 28px;
+        border-top: 1px solid #eee;
+        font-size: 13px;
+        background: #fbfbfb;
+      }
+      .final {
+        font-weight: 700;
+      }
+      .small {
+        font-size: 11px;
+        color: #6b7280;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <h1>Música: Barroco vs. Hip‑Hop</h1>
+        <div class="sub">
+          Origen • Características • Públicos • Función • Producción •
+          Influencias • Emociones • Impacto
+        </div>
+      </div>
+      <div class="grid">
+        <!-- Columna Barroco -->
+        <div class="col left">
+          <div class="title">
+            <span>Barroco (c. 1600–1750)</span>
+            <div class="pill left">Antes de 1900</div>
+          </div>
+          <div class="image" contenteditable="true">
+            <img
+              src="https://www.meisterdrucke.ie/kunstwerke/1260px/Unknown_Artist_-_Portrait_of_Jean_Sebastien_Bach_%28Johann_Sebastian_Bach_-_%28MeisterDrucke-914016%29.jpg"
+            />
+          </div>
+          <h3>Orígenes y contexto</h3>
+          <ul>
+            <li>
+              Italia y Europa; cortes y templos en la Europa del s. XVII–XVIII
+            </li>
+            <li>Contrarreforma y absolutismo; auge de la ciencia y la ópera</li>
+          </ul>
+          <h3>Características, artistas y obras</h3>
+          <ul>
+            <li>
+              Bajo continuo, contraste, contrapunto; formas: fuga, suite,
+              concierto
+            </li>
+            <li>Autores: J. S. Bach, Händel, Vivaldi</li>
+            <li>
+              Obras: Conciertos de Brandeburgo, <em>El Mesías</em>,
+              <em>Las Cuatro Estaciones</em>
+            </li>
+          </ul>
+          <h3>¿Quién lo escuchaba?</h3>
+          <ul>
+            <li>Nobleza y clero; burguesía urbana en salones</li>
+          </ul>
+          <h3>¿Para qué servía?</h3>
+          <ul>
+            <li>
+              Culto religioso, ceremonias, teatro musical y entretenimiento
+              cortesano
+            </li>
+          </ul>
+          <h3>¿Cómo se producía?</h3>
+          <ul>
+            <li>
+              Instrumentos acústicos (órgano, clave, cuerdas, vientos); orquesta
+            </li>
+          </ul>
+          <h3>Influencias</h3>
+          <ul>
+            <li>Arte barroco, arquitectura y retórica; humanismo tardío</li>
+          </ul>
+          <h3>Emociones</h3>
+          <ul>
+            <li>Grandiosidad, devoción, dramatismo, pathos</li>
+          </ul>
+          <h3>Impacto</h3>
+          <ul>
+            <li>Base de la tonalidad y formas clásicas posteriores</li>
+          </ul>
+          <div class="keywords">
+            <div class="kw left">ornamento</div>
+            <div class="kw left">contrapunto</div>
+            <div class="kw left">devoción</div>
+            <div class="kw left">orden</div>
+          </div>
+          <div class="iconRow">
+            <!-- Icono Barroco: filigrana/voluta -->
+            <svg
+              width="44"
+              height="28"
+              viewBox="0 0 64 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 32c8-14 18-22 26-22 10 0 18 10 4 18-10 6-18-2-10-8 6-4 14 0 20-4"
+                stroke="var(--baroque)"
+                stroke-width="3"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+            <span class="small"
+              >Ícono del "sonido": línea curva ornamental</span
+            >
+          </div>
+        </div>
+
+        <!-- Columna Hip-Hop -->
+        <div class="col right">
+          <div class="title">
+            <span>Hip‑Hop (desde 1970s)</span>
+            <div class="pill right">Siglo XX/XXI</div>
+          </div>
+          <div class="image" contenteditable="true">
+            <img
+              src="https://www.sopitas.com/wp-content/uploads/2023/08/La-historia-de-DJ-Kool-Herc-y-el-nacimiento-del-hip-hop-5.jpg"
+            />
+          </div>
+          <h3>Orígenes y contexto</h3>
+          <ul>
+            <li>South Bronx, Nueva York; juventud afro/latina en 1970s</li>
+            <li>Fiestas de barrio, block parties y cultura de sound systems</li>
+          </ul>
+          <h3>Características, artistas y obras</h3>
+          <ul>
+            <li>MCing, DJing (breakbeats, sampleo), graffiti y b‑boying</li>
+            <li>
+              Artistas: DJ Kool Herc, Grandmaster Flash, Public Enemy, Lauryn
+              Hill, Kendrick Lamar
+            </li>
+            <li>Temas: identidad, protesta, fiesta y narrativa urbana</li>
+          </ul>
+          <h3>¿Quién lo escuchaba?</h3>
+          <ul>
+            <li>
+              Al inicio, jóvenes de barrios urbanos; luego audiencia global
+            </li>
+          </ul>
+          <h3>¿Para qué servía?</h3>
+          <ul>
+            <li>Baile, socialización, crónica social y empoderamiento</li>
+          </ul>
+          <h3>¿Cómo se producía?</h3>
+          <ul>
+            <li>Tornamesas, samplers, cajas de ritmo y software (DAWs)</li>
+          </ul>
+          <h3>Influencias</h3>
+          <ul>
+            <li>Funk, soul, dub jamaiquino, poesía hablada y activismo</li>
+          </ul>
+          <h3>Emociones</h3>
+          <ul>
+            <li>Energía, orgullo, denuncia, alegría comunitaria</li>
+          </ul>
+          <h3>Impacto</h3>
+          <ul>
+            <li>Lenguaje, moda, negocios y artes a escala mundial</li>
+          </ul>
+          <div class="keywords">
+            <div class="kw right">ritmo</div>
+            <div class="kw right">flow</div>
+            <div class="kw right">protesta</div>
+            <div class="kw right">identidad</div>
+          </div>
+          <div class="iconRow">
+            <!-- Icono Hip-Hop: onda/cuadrada (beat) -->
+            <svg
+              width="44"
+              height="28"
+              viewBox="0 0 64 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 24h10V8h12v16h12V8h12v16h8"
+                stroke="var(--accent)"
+                stroke-width="3"
+                fill="none"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="small">Ícono del "sonido": onda rítmica/beat</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="final">Frase final:</div>
+        <div>
+          "Ambos son distintos porque el Barroco busca la majestuosidad y la
+          forma académica, mientras que el Hip‑Hop nace de la calle como voz
+          directa de su comunidad; pero se parecen en que ambos responden a su
+          contexto social y usan la música para mover emociones y cuerpos."
+        </div>
+        <div class="small" style="margin-top: 8px">
+          Sugerencia: imprime o exporta a PDF desde tu navegador. Edita los
+          textos en vivo (títulos, listas e imágenes son editables).
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
