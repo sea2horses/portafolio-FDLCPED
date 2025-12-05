@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi Atlas Visual – Sentido y Significado del Arte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Tipos de letra simples pero con vibe de diseño */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                   "Inter", "Segoe UI", sans-serif;
+    }
+
+    /* Animaciones de aparecer al hacer scroll */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <div class="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+
+    <!-- NAV + HERO -->
+    <header class="border-b border-slate-800/70 bg-slate-950/70 backdrop-blur sticky top-0 z-30">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-400 via-sky-400 to-indigo-500 flex items-center justify-center text-xs font-bold tracking-[0.18em] uppercase">
+            AV
+          </div>
+          <div>
+            <h1 class="text-xl md:text-2xl font-semibold tracking-tight">
+              Mi Atlas Visual
+            </h1>
+            <p class="text-xs md:text-sm text-slate-300">
+              Sentido y Significado del Arte · UAM
+            </p>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex text-xs gap-2">
+          <a href="#raices" class="px-3 py-1 rounded-full border border-slate-700/80 hover:border-amber-400 hover:text-amber-300 transition">Raíces</a>
+          <a href="#quiebre" class="px-3 py-1 rounded-full border border-slate-700/80 hover:border-cyan-400 hover:text-cyan-300 transition">Quiebre</a>
+          <a href="#poder" class="px-3 py-1 rounded-full border border-slate-700/80 hover:border-emerald-400 hover:text-emerald-300 transition">Imagen y poder</a>
+          <a href="#resistencia" class="px-3 py-1 rounded-full border border-slate-700/80 hover:border-rose-400 hover:text-rose-300 transition">Resistencia</a>
+          <a href="#mirada" class="px-3 py-1 rounded-full border border-slate-700/80 hover:border-indigo-400 hover:text-indigo-300 transition">Mi mirada</a>
+          <a href="#carta" class="px-3 py-1 rounded-full border border-slate-700/80 hover:border-fuchsia-400 hover:text-fuchsia-300 transition">Carta</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pt-8 pb-14 space-y-12 md:space-y-16">
+
+      <!-- Hero: palabras visuales -->
+      <section class="reveal flex justify-between bg-slate-900/70 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-xl shadow-sky-900/40">
+        <div class="grid md:grid-cols-[1.1fr,0.9fr] gap-8 items-center">
+          <div class="space-y-4">
+            <p class="uppercase text-[0.7rem] tracking-[0.4em] text-slate-400">
+              Atlas Visual · Recorrido personal
+            </p>
+            <div class="space-y-1">
+              <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">
+                Del <span class="text-amber-300">ORDEN</span> clásico
+              </h2>
+              <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">
+                a la <span class="text-cyan-300">RUPTURA</span> moderna
+              </h2>
+              <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">
+                y a mi propia <span class="text-fuchsia-300">VOZ</span>.
+              </h2>
+            </div>
+            <p class="text-sm md:text-base text-slate-200 leading-relaxed max-w-xl">
+              Este sitio es mi mapa visual. Cada sección une una imagen con una palabra grande:
+              orden, ruptura, memoria, resistencia, identidad y futuro. No es solo texto: es la forma
+              en que esas palabras se ven en mi cabeza.
+            </p>
+
+            <div class="flex flex-wrap gap-2 pt-2 text-xs">
+              <span class="px-3 py-1 rounded-full border border-amber-400/60 text-amber-200/90 bg-amber-500/10">
+                ✦ CLÁSICO
+              </span>
+              <span class="px-3 py-1 rounded-full border border-cyan-400/60 text-cyan-200/90 bg-cyan-500/10">
+                ✦ MODERNO
+              </span>
+              <span class="px-3 py-1 rounded-full border border-indigo-400/60 text-indigo-200/90 bg-indigo-500/10">
+                ✦ YO / EMOCIÓN
+              </span>
+            </div>
+          </div>
+
+          <!-- Mini collage -->
+          <div class="grid grid-cols-2 gap-3 md:gap-4">
+            <div class="col-span-1 row-span-2 relative rounded-3xl overflow-hidden border border-slate-700/80 bg-gradient-to-b from-slate-800 to-slate-950 flex items-center justify-center">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_60%),_radial-gradient(circle_at_bottom,_rgba(56,189,248,0.18),_transparent_60%)]"></div>
+              <div class="relative text-center space-y-1 px-4 py-6">
+                <p class="text-[0.7rem] uppercase tracking-[0.3em] text-slate-400">Palabras clave</p>
+                <p class="text-xl font-semibold leading-tight">
+                  ORDEN · RUPTURA ·<br> MEMORIA · RESISTENCIA
+                </p>
+              </div>
+            </div>
+            <!-- <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-amber-400/60 bg-slate-900/70">
+              <img src="imagenes/partenon-o-david.jpg" alt="Obra clásica" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-indigo-400/60 bg-slate-900/70">
+              <img src="imagenes/mi-contraportada.jpg" alt="Obra propia" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 1: RAÍCES -->
+      <section id="raices" class="reveal scroll-mt-28">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-xl shadow-amber-900/30">
+          <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+            <div class="md:w-5/12 relative">
+              <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-amber-500/40 bg-slate-900/60">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Parthenon.at.Nashville.Tenenssee.01.jpg" alt="Partenón o escultura clásica" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+              <!-- Palabra flotante -->
+              <div class="absolute -bottom-6 left-3 px-4 py-1 rounded-full bg-amber-400 text-slate-950 text-xs font-semibold tracking-[0.2em] uppercase">
+                ORDEN · MEDIDA · LEY
+              </div>
+            </div>
+
+            <div class="md:w-7/12 space-y-4 text-sm md:text-base leading-relaxed">
+              <div class="flex items-center gap-3">
+                <span class="text-4xl md:text-5xl font-black tracking-tight text-amber-300/90 leading-none">
+                  01
+                </span>
+                <div>
+                  <p class="uppercase text-[0.7rem] tracking-[0.35em] text-amber-200/80">Raíces visuales</p>
+                  <h2 class="text-xl md:text-2xl font-semibold">
+                    El Partenón: la imagen del orden clásico
+                  </h2>
+                </div>
+              </div>
+
+              <p>
+                Elijo el Partenón de Atenas como raíz visual. Cada columna es una forma de decir
+                “aquí manda la medida”. La arquitectura se vuelve casi un diagrama de valores:
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs md:text-sm">
+                <div class="border border-amber-400/40 rounded-2xl px-3 py-3 bg-amber-500/5">
+                  <p class="font-semibold text-amber-200 text-[0.7rem] uppercase tracking-[0.2em] mb-1">ARQUITECTURA</p>
+                  <p>Proporciones matemáticas, simetría, equilibrio visual.</p>
+                </div>
+                <div class="border border-amber-400/40 rounded-2xl px-3 py-3 bg-amber-500/5">
+                  <p class="font-semibold text-amber-200 text-[0.7rem] uppercase tracking-[0.2em] mb-1">VALORES</p>
+                  <p>Ciudadanía, razón, idea de comunidad organizada.</p>
+                </div>
+                <div class="border border-amber-400/40 rounded-2xl px-3 py-3 bg-amber-500/5">
+                  <p class="font-semibold text-amber-200 text-[0.7rem] uppercase tracking-[0.2em] mb-1">VIGENCIA</p>
+                  <p>Los edificios de poder aún imitan este lenguaje visual.</p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-3 text-xs md:text-sm pt-1">
+                <a href="https://commons.wikimedia.org/wiki/Special:FilePath/Parthenon_from_west.jpg" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-1 px-3 py-1 rounded-full border border-amber-400/60 text-amber-200 hover:text-amber-100 hover:border-amber-300 transition">
+                  Ver el Partenón
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+
+              <details class="mt-2 text-xs md:text-sm text-slate-300/90">
+                <summary class="cursor-pointer inline-flex items-center gap-1 hover:text-amber-200">
+                  Leer reflexión completa
+                  <span class="text-amber-200">▾</span>
+                </summary>
+                <div class="mt-2 space-y-2">
+                  <p>
+                    El Partenón no solo habla de dioses, sino de cómo los griegos se pensaban a sí
+                    mismos: racionales, luminosos, capaces de construir un mundo ordenado. Al
+                    repetir sus columnas en bancos, museos o parlamentos actuales, seguimos
+                    activando esa memoria visual de estabilidad y autoridad.
+                  </p>
+                  <p>
+                    Para mí es una especie de “logo” de la democracia clásica: sólido, blanco,
+                    geométrico. Una imagen que todavía estructura cómo imaginamos el poder “formal”.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: QUIEBRE -->
+      <section id="quiebre" class="reveal scroll-mt-28">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-xl shadow-cyan-900/35">
+          <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 items-start">
+            <div class="md:w-5/12 relative">
+              <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-cyan-400/60 bg-slate-900/60">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg" alt="Entierro en Ornans de Courbet" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="absolute -bottom-6 right-3 px-4 py-1 rounded-full bg-cyan-400 text-slate-950 text-xs font-semibold tracking-[0.2em] uppercase">
+                RUPTURA · COTIDIANO
+              </div>
+            </div>
+
+            <div class="md:w-7/12 space-y-4 text-sm md:text-base leading-relaxed">
+              <div class="flex items-center gap-3">
+                <span class="text-4xl md:text-5xl font-black tracking-tight text-cyan-300/90 leading-none">
+                  02
+                </span>
+                <div>
+                  <p class="uppercase text-[0.7rem] tracking-[0.35em] text-cyan-200/80">Quiebre moderno</p>
+                  <h2 class="text-xl md:text-2xl font-semibold">
+                    Realismo: lo común en formato de héroe
+                  </h2>
+                </div>
+              </div>
+
+              <p>
+                Con <em>Entierro en Ornans</em>, Courbet rompe el guion: el gran formato ya no es para
+                dioses sino para un funeral de pueblo. El centro visual se llena de:
+              </p>
+
+              <ul class="grid gap-2 text-xs md:text-sm list-none">
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-1.5 h-1.5 rounded-full bg-cyan-300"></span>
+                  <span>Rostros cansados y ropa cotidiana, sin idealización.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-1.5 h-1.5 rounded-full bg-cyan-300"></span>
+                  <span>Paisaje gris, clima pesado, sensación de peso social.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-1.5 h-1.5 rounded-full bg-cyan-300"></span>
+                  <span>La idea de que “lo real”, aunque incómodo, merece un gran lienzo.</span>
+                </li>
+              </ul>
+
+              <p>
+                El arte deja de mostrar solo lo que debería ser y se atreve a mostrar lo que es.
+                Eso abre un camino para que el arte se vuelva crítica, denuncia y no solo adorno.
+              </p>
+
+              <div class="flex flex-wrap gap-3 text-xs md:text-sm">
+                <a href="https://commons.wikimedia.org/wiki/Special:FilePath/Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-1 px-3 py-1 rounded-full border border-cyan-400/60 text-cyan-200 hover:text-cyan-100 hover:border-cyan-300 transition">
+                  Ver <em>Entierro en Ornans</em>
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3: IMAGEN Y PODER -->
+      <section id="poder" class="reveal scroll-mt-28">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-xl shadow-emerald-900/35">
+          <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+            <div class="md:w-5/12 relative">
+              <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-emerald-400/60 bg-slate-900/60">
+                <img src="https://themiscellany.org/sites/default/files/styles/tablet/public/2021-11/cha1221-s4-lavirgendeguadalupe.jpg?itok=5h5lLQGS" alt="Imagen de la Virgen de Guadalupe" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="absolute -bottom-6 left-3 px-4 py-1 rounded-full bg-emerald-400 text-slate-950 text-xs font-semibold tracking-[0.2em] uppercase">
+                MEMORIA · CREENCIA
+              </div>
+            </div>
+
+            <div class="md:w-7/12 space-y-4 text-sm md:text-base leading-relaxed">
+              <div class="flex items-center gap-3">
+                <span class="text-4xl md:text-5xl font-black tracking-tight text-emerald-300/90 leading-none">
+                  03
+                </span>
+                <div>
+                  <p class="uppercase text-[0.7rem] tracking-[0.35em] text-emerald-200/80">Imagen y poder</p>
+                  <h2 class="text-xl md:text-2xl font-semibold">
+                    La Virgen de Guadalupe: ideología en formato icono
+                  </h2>
+                </div>
+              </div>
+
+              <p>
+                La imagen de la Virgen de Guadalupe es un cruce de mundos: maría europea,
+                símbolos indígenas, piel mestiza. Funciona como:
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="border border-emerald-400/40 rounded-2xl px-3 py-3 bg-emerald-500/5">
+                  <p class="font-semibold text-emerald-200 text-[0.7rem] uppercase tracking-[0.2em] mb-1">Herramienta de poder</p>
+                  <p>Refuerza la autoridad de la Iglesia y una moral oficial.</p>
+                </div>
+                <div class="border border-emerald-400/40 rounded-2xl px-3 py-3 bg-emerald-500/5">
+                  <p class="font-semibold text-emerald-200 text-[0.7rem] uppercase tracking-[0.2em] mb-1">Bandera popular</p>
+                  <p>Icono de identidad para pueblos que resisten la homogeneización.</p>
+                </div>
+              </div>
+
+              <p>
+                Más que una pintura, es un nodo visual que organiza fiestas, murales, tatuajes,
+                estampas. Cada reproducción repite una historia: nación creyente, mestiza, protegida
+                por una madre celestial.
+              </p>
+
+              <div class="flex flex-wrap gap-3 text-xs md:text-sm">
+                <a href="https://commons.wikimedia.org/wiki/Special:FilePath/Virgen_de_guadalupe1.jpg" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-1 px-3 py-1 rounded-full border border-emerald-400/60 text-emerald-200 hover:text-emerald-100 hover:border-emerald-300 transition">
+                  Ver la imagen de Guadalupe
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: RESISTENCIA -->
+      <section id="resistencia" class="reveal scroll-mt-28">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-xl shadow-rose-900/35">
+          <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 items-start">
+            <div class="md:w-5/12 relative">
+              <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-rose-400/60 bg-slate-900/60">
+                <img src="https://poetasfamososdenicaragua.wordpress.com/wp-content/uploads/2015/01/gu.jpg" alt="Escena de El Güegüense" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="absolute -bottom-6 right-3 px-4 py-1 rounded-full bg-rose-400 text-slate-950 text-xs font-semibold tracking-[0.2em] uppercase">
+                RESISTENCIA · SÁTIRA
+              </div>
+            </div>
+
+            <div class="md:w-7/12 space-y-4 text-sm md:text-base leading-relaxed">
+              <div class="flex items-center gap-3">
+                <span class="text-4xl md:text-5xl font-black tracking-tight text-rose-300/90 leading-none">
+                  04
+                </span>
+                <div>
+                  <p class="uppercase text-[0.7rem] tracking-[0.35em] text-rose-200/80">Resistencia y voz</p>
+                  <h2 class="text-xl md:text-2xl font-semibold">
+                    El Güegüense: mascarada que se burla del poder
+                  </h2>
+                </div>
+              </div>
+
+              <p>
+                La danza-teatro nicaragüense <em>El Güegüense</em> sobrevive desde la colonia como comedia
+                satírica. Con máscara, música y mezcla de español con náhuatl, ridiculiza a los
+                funcionarios coloniales y celebra la astucia popular.
+              </p>
+
+              <ul class="grid gap-2 text-xs md:text-sm">
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-1.5 h-1.5 rounded-full bg-rose-300"></span>
+                  <span>Resistencia simbólica: el pueblo se burla del poder en su propia fiesta.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-1.5 h-1.5 rounded-full bg-rose-300"></span>
+                  <span>Mestizaje vivo: personajes españoles y náhuas conviven en el mismo escenario.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-1.5 h-1.5 rounded-full bg-rose-300"></span>
+                  <span>Humor como arma: la burla colectiva funciona como vacuna contra la humillación.</span>
+                </li>
+              </ul>
+
+              <p>
+                Cada representación del Güegüense es un escenario en la calle: máscara, baile y música
+                que cuestionan el orden establecido. El arte popular se vuelve archivo vivo de memoria
+                y resistencia.
+              </p>
+
+              <div class="flex flex-wrap gap-3 text-xs md:text-sm">
+                <a href="https://commons.wikimedia.org/wiki/Special:FilePath/El_G%C3%BCeg%C3%BCense_en_Masaya.jpg" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-1 px-3 py-1 rounded-full border border-rose-400/60 text-rose-200 hover:text-rose-100 hover:border-rose-300 transition">
+                  Ver El Güegüense
+                  <span aria-hidden="true">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 5: MI MIRADA -->
+      <section id="mirada" class="reveal scroll-mt-28">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-xl shadow-indigo-900/40">
+          <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+            <div class="md:w-5/12 relative">
+              <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-indigo-400/60 bg-slate-900/60">
+                <img src="obra-propia.png" alt="Obra propia: contraportada del bloc de bocetos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+
+              <!-- Etiquetas amarillo / azul -->
+              <div class="absolute -bottom-7 left-2 flex gap-2 text-[0.65rem] font-semibold tracking-[0.2em] uppercase">
+                <span class="px-3 py-1 rounded-full bg-amber-300 text-slate-950">
+                  LADO AMARILLO · HABILIDAD
+                </span>
+                <span class="px-3 py-1 rounded-full bg-sky-400 text-slate-950 hidden sm:inline-flex">
+                  LADO AZUL · ESTRÉS
+                </span>
+              </div>
+            </div>
+
+            <div class="md:w-7/12 space-y-4 text-sm md:text-base leading-relaxed">
+              <div class="flex items-center gap-3">
+                <span class="text-4xl md:text-5xl font-black tracking-tight text-indigo-300/90 leading-none">
+                  05
+                </span>
+                <div>
+                  <p class="uppercase text-[0.7rem] tracking-[0.35em] text-indigo-200/80">Mi mirada</p>
+                  <h2 class="text-xl md:text-2xl font-semibold">
+                    Entre la precisión anatómica y el desborde emocional
+                  </h2>
+                </div>
+              </div>
+
+              <p>
+                Esta contraportada divide la hoja en dos mitades casi espejadas:
+                amarillo cálido vs. azul profundo, figura erguida vs. rostro invertido.
+                Es literalmente una línea vertical que separa dos estados mentales.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-3 text-xs md:text-sm">
+                <div class="border border-amber-400/60 rounded-2xl px-3 py-3 bg-amber-500/5">
+                  <p class="font-semibold text-amber-200 text-[0.7rem] uppercase tracking-[0.2em] mb-1">LADO AMARILLO</p>
+                  <p>Mi “yo” habilidoso: estudio de anatomía, control de la forma, sensación de dominio técnico.</p>
+                </div>
+                <div class="border border-sky-400/60 rounded-2xl px-3 py-3 bg-sky-500/5">
+                  <p class="font-semibold text-sky-200 text-[0.7rem] uppercase tracking-[0.2em] mb-1">LADO AZUL</p>
+                  <p>El estrés del curso: cabeza abajo, gesto tenso, pinceladas más caóticas y oscuras.</p>
+                </div>
+              </div>
+
+              <p>
+                El contraste de casi complementarios (amarillo / azul) traduce visualmente la
+                fricción entre orgullo y agotamiento. La obra dice: mi proceso creativo no es
+                neutro, está atravesado por ansiedad, autoexigencia y ganas de mejorar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 6: CARTA AL FUTURO -->
+      <section id="carta" class="reveal scroll-mt-28">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-xl shadow-fuchsia-900/40">
+          <div class="flex flex-col md:flex-row gap-6 md:gap-8">
+            <div class="md:w-4/12 space-y-3">
+              <p class="uppercase text-[0.7rem] tracking-[0.35em] text-fuchsia-200/80">
+                Carta al futuro
+              </p>
+              <h2 class="text-2xl md:text-3xl font-semibold leading-tight">
+                ¿Qué responsabilidad tengo
+                <span class="block text-fuchsia-300">como diseñador visual?</span>
+              </h2>
+
+              <div class="grid grid-cols-2 gap-3 text-[0.7rem] uppercase tracking-[0.18em]">
+                <div class="border border-fuchsia-400/50 rounded-2xl px-3 py-2 bg-fuchsia-500/10">
+                  CUIDAR LA MIRADA
+                </div>
+                <div class="border border-fuchsia-400/50 rounded-2xl px-3 py-2 bg-fuchsia-500/10">
+                  DAR VOZ A OTROS
+                </div>
+                <div class="border border-fuchsia-400/50 rounded-2xl px-3 py-2 bg-fuchsia-500/10">
+                  PENSAR EL PODER
+                </div>
+                <div class="border border-fuchsia-400/50 rounded-2xl px-3 py-2 bg-fuchsia-500/10">
+                  IMAGINAR FUTUROS
+                </div>
+              </div>
+            </div>
+
+            <div class="md:w-8/12 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                Cuando trabajo imágenes, trabajo la forma en que otras personas verán el mundo.
+                Un encuadre puede humanizar o deshumanizar; una paleta puede hacer sentir cercana
+                una historia o volverla indiferente. Esa capacidad de dirigir la atención es un poder,
+                y un poder siempre viene con responsabilidad.
+              </p>
+              <p>
+                Como diseñador visual, sé que mis decisiones no son solo “de estilo”. Puedo
+                reforzar estereotipos o romperlos; puedo repetir discursos coloniales o abrir espacio
+                para voces que casi nunca se ven. Diseñar desde América Latina implica cuestionar la
+                idea de que lo moderno viene siempre de otros lugares y recuperar referentes de
+                barrios, fiestas, luchas y archivos familiares.
+              </p>
+              <p>
+                También tengo la tarea de no saturar el mundo con ruido. En medio de publicidad
+                agresiva, noticias falsas y algoritmos, quiero que mis piezas funcionen como pequeñas
+                pausas: lugares donde se pueda pensar, sentir empatía y hacerse preguntas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="pt-6 text-center text-[0.7rem] text-slate-500">
+        Universidad Americana · Facultad de Marketing, Diseño y Comunicación ·
+        Sentido y Significado del Arte
+      </footer>
+    </main>
+  </div>
+
+  <!-- Script para animar secciones al hacer scroll -->
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((section) => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
